@@ -9,8 +9,9 @@ library(tidyverse)
 
 #遠端連線
 rs.crawler <- remoteDriver(remoteServerAddr = "localhost", port = 4444, browserName = "chrome")
-
 rs.crawler$open()
+
+#輸入欲爬文的Tripadvisor網址
 rs.crawler$navigate("https://www.tripadvisor.com.tw/Attraction_Review-g13808515-d2019764-Reviews-Elephant_Mountain_aka_Nangang_District_Hiking_Trail-Xinyi_District_Taipei.html")
 
 #頁數計算
